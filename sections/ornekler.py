@@ -132,4 +132,4 @@ plt.show()
 
     st.pyplot(fig)
     
-    next_button("matematiksel_temel", "McNemar Testinin Matematiksel Temeli'ne Git")
+    next_button("sonuc", "McNemar Testinin Matematiksel Temeli'ne Git")
