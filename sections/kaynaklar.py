@@ -1,5 +1,5 @@
 import streamlit as st
-from navigation import next_button
+#from navigation import next_button
 
 def goster_kaynaklar():
     # Başlık ve Giriş
@@ -72,4 +72,4 @@ def goster_kaynaklar():
     Bu kaynaklar, McNemar testi ve diğer ileri düzey istatistiksel testler hakkında daha fazla bilgi edinmek isteyenler için mükemmel başlangıç noktalarıdır. Bu kaynakları inceleyerek, istatistiksel analiz becerilerinizi geliştirebilir ve daha karmaşık veri analizlerini gerçekleştirebilirsiniz.
     """)
     
-    next_button("sorular", "Sık Sorulan Sorular(SSS)'a Git")
+    #next_button("sorular", "Sık Sorulan Sorular(SSS)'a Git")

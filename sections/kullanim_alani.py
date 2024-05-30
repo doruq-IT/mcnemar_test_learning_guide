@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from navigation import next_button
+#from navigation import next_button
 
 def goster_kullanim_alani():
     # Başlık ve Giriş
@@ -73,4 +73,4 @@ def goster_kullanim_alani():
     st.table(df4)
     st.write("Bu tabloyu kullanarak, yeni ambalajın tüketici algısı üzerindeki etkisini McNemar testi ile değerlendirebilirsiniz.")
     
-    next_button("matematiksel_temel", "McNemar Testinin Matematiksel Temeli'ne Git")
+    #next_button("matematiksel_temel", "McNemar Testinin Matematiksel Temeli'ne Git")

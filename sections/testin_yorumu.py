@@ -1,5 +1,5 @@
 import streamlit as st
-from navigation import next_button
+#from navigation import next_button
 
 def goster_testin_yorumu():
     # Başlık ve Giriş
@@ -85,4 +85,4 @@ def goster_testin_yorumu():
     Özetle, McNemar testinin sonuçlarını yorumlarken p-değerine ve belirlenen anlamlılık düzeyine dikkat ederiz. P-değeri küçükse (genellikle 0.05'ten küçükse), null hipotezi reddederiz ve alternatif hipotezi kabul ederiz. Bu süreç, belirli bir tedavi veya müdahalenin etkisini anlamamıza yardımcı olur.
     """)
     
-    next_button("python_uygulama", "McNemar Testinin Python ile Uygulanması'na Git")
+    #next_button("python_uygulama", "McNemar Testinin Python ile Uygulanması'na Git")

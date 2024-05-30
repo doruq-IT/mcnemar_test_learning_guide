@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import scipy.stats as stats
-from navigation import next_button
+#from navigation import next_button
 
 def goster_test_adimlari():
     # Başlık ve Giriş
@@ -113,4 +113,4 @@ print('p-value:', p_value)
     4. P-değerini hesaplamak ve sonuçları yorumlamak.
     """)
     
-    next_button("testin_yorumu", "McNemar Testinin Yorumlanması'na Git")
+    #next_button("testin_yorumu", "McNemar Testinin Yorumlanması'na Git")
