@@ -1,4 +1,5 @@
 import streamlit as st
+from navigation import next_button
 
 def goster_testin_yorumu():
     # Başlık ve Giriş

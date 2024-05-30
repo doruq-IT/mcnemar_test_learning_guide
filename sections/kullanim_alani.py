@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from navigation import next_button
 
 def goster_kullanim_alani():
     # Başlık ve Giriş

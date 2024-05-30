@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 from scipy.stats import binomtest, chi2
+from navigation import next_button
 
 def goster_python_uygulama():
     # Başlık ve Giriş

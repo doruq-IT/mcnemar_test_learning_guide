@@ -1,4 +1,5 @@
 import streamlit as st
+from navigation import next_button
 
 def goster_sonuc():
     # Başlık ve Giriş

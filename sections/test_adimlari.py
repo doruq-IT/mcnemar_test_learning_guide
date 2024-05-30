@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import scipy.stats as stats
+from navigation import next_button
 
 def goster_test_adimlari():
     # Başlık ve Giriş

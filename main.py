@@ -1,5 +1,5 @@
 import streamlit as st
-from sections import giris, mcnemar_temelleri, kullanim_alani, matematiksel_temel, test_adimlari, testin_yorumu, python_uygulama, guclu_ve_zayif_yonler, ornekler, sonuc, kaynaklar, sorular
+from sections import giris, mcnemar_temelleri, kullanim_alani, matematiksel_temel, test_adimlari, testin_yorumu, python_uygulama, guclu_ve_zayif_yonler, ornekler, sonuc, kaynaklar, sorular, navigation
 
 # Sayfa Başlığı
 st.title("McNemar Testi Öğrenme Rehberi")
