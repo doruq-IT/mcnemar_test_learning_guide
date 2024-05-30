@@ -130,5 +130,3 @@ plt.show()
     ax.legend()
 
     st.pyplot(fig)
-
-# main.py dosyasında gerekli importların ve fonksiyon çağrılarının yapıldığından emin olun
