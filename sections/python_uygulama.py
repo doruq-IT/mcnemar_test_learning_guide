@@ -16,7 +16,7 @@ def goster_python_uygulama():
     st.write("Daha sonra bu kütüphaneleri import edelim:")
     st.code("""
 import numpy as np
-from scipy.stats import binom_test
+from scipy.stats import binomtest
     """, language='python')
 
     # Kontenjans Tablosunun Oluşturulması
@@ -76,7 +76,7 @@ b = table[0, 1]
 c = table[1, 0]
 
 # Binom testi
-p_value = binom_test([b, c])
+p_value = binomtest([b, c])
 print('p-value:', p_value)
     """, language='python')
 
@@ -85,7 +85,7 @@ print('p-value:', p_value)
     st.write("Son olarak, yukarıdaki adımları birleştirerek McNemar testinin tam uygulamasını gösterelim:")
     st.code("""
 import numpy as np
-from scipy.stats import binom_test, chi2
+from scipy.stats import binomtest, chi2
 
 # 2x2 kontenjans tablosu verileri
 table = np.array([[20, 10],
@@ -104,7 +104,7 @@ p_value_chi2 = chi2.sf(chi_square, 1)
 print('p-value (Chi-square):', p_value_chi2)
 
 # Binom testi ile kesin McNemar testi
-p_value_binom = binom_test([b, c])
+p_value_binom = binomtest([b, c])
 print('p-value (Binom Test):', p_value_binom)
     """, language='python')
 
