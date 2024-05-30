@@ -1,6 +1,10 @@
 import streamlit as st
 from sections import giris, mcnemar_temelleri, kullanim_alani, matematiksel_temel, test_adimlari, testin_yorumu, python_uygulama, guclu_ve_zayif_yonler, ornekler, sonuc, kaynaklar, sorular
-#from navigation import next_button
+from navigation import next_button, get_current_page, set_initial_page
+
+
+# Başlangıç sayfasını ayarla
+set_initial_page("Giriş")
 
 # Sayfa Başlığı
 st.title("McNemar Testi Öğrenme Rehberi")
@@ -15,12 +19,14 @@ menu = ["Giriş", "McNemar Testinin Temelleri", "Kullanım Alanı", "McNemar Tes
         "McNemar Testinin Python ile Uygulanması", "McNemar Testinin Güçlü ve Zayıf Yönleri", 
         "Uygulamalı Örnekler", "Sonuç ve Özet", "Kaynaklar"]
 
-choice = st.sidebar.selectbox("Bölümler", menu)
+choice = get_current_page()
 
-# next_page = st.experimental_get_query_params().get('next_page', [None])[0]
+# choice = st.sidebar.selectbox("Bölümler", menu)
 
-# if next_page:
-#     choice = next_page
+if choice not in menu:
+    choice = "Giriş"
+
+st.sidebar.selectbox("Bölümler", menu, index=menu.index(choice))
 
 # Seçime Göre Fonksiyonları Çağır
 if choice == "Giriş":
