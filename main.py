@@ -1,5 +1,5 @@
 import streamlit as st
-from sections import giris, mcnemar_temelleri, kullanım_alani, matematiksel_temel, test_adimlari, testin_yorumu, python_uygulama, guclu_ve_zayif_yonler, ornekler, sonuc, kaynaklar
+from sections import giris, kullanim_alani, mcnemar_temelleri, matematiksel_temel, test_adimlari, testin_yorumu, python_uygulama, guclu_ve_zayif_yonler, ornekler, sonuc, kaynaklar
 
 # Sayfa Başlığı
 st.title("McNemar Testi Öğrenme Rehberi")
@@ -22,7 +22,7 @@ if choice == "Giriş":
 elif choice == "McNemar Testinin Temelleri":
     mcnemar_temelleri.goster_temeller()
 elif choice == "Kullanım Alanı":
-    kullanım_alani.goster_kullanim_alani()
+    kullanim_alani.goster_kullanim_alani()
 elif choice == "McNemar Testinin Matematiksel Temeli":
     matematiksel_temel.goster_matematiksel_temel()
 elif choice == "McNemar Testinin Adımları":
