@@ -22,7 +22,7 @@ def next_button(next_page_name, next_page_label):
         }}
     </style>
     <div class="next-button-container">
-        <a class="next-button" href="?next_page={next_page_name}">{next_page_label} &rarr;</a>
+        <a class="next-button" href="/?next_page={next_page_name}">{next_page_label} &rarr;</a>
     </div>
     """
     st.markdown(button_html, unsafe_allow_html=True)

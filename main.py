@@ -17,11 +17,10 @@ menu = ["Giriş", "McNemar Testinin Temelleri", "Kullanım Alanı", "McNemar Tes
 
 choice = st.sidebar.selectbox("Bölümler", menu)
 
-next_button = st.experimental_get_query_params().get('next_page', [None])[0]
+next_page = st.experimental_get_query_params().get('next_page', [None])[0]
 
-
-if next_button:
-    choice = next_button
+if next_page:
+    choice = next_page
 
 # Seçime Göre Fonksiyonları Çağır
 if choice == "Giriş":
