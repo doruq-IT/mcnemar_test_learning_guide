@@ -1,5 +1,5 @@
 import streamlit as st
-from sections import giris, mcnemar_temelleri, kullanim_alani, matematiksel_temel, test_adimlari, testin_yorumu, python_uygulama, guclu_ve_zayif_yonler, ornekler, sonuc, kaynaklar, sorular
+from sections import giris, mcnemar_temelleri, matematiksel_temel, test_adimlari, testin_yorumu, python_uygulama, guclu_ve_zayif_yonler, ornekler, sonuc, kaynaklar, sorular
 # from navigation import next_button, get_current_page, set_initial_page
 
 
@@ -15,7 +15,7 @@ Soldaki menüyü kullanarak rehberdeki konulara göz atabilirsiniz.
 """)
 
 # Menü
-menu = ["Giriş", "McNemar Testinin Temelleri", "Kullanım Alanı", "McNemar Testinin Matematiksel Temeli", 
+menu = ["Giriş", "McNemar Testinin Temelleri", "McNemar Testinin Matematiksel Temeli", 
         "McNemar Testinin Adımları", "McNemar Testinin Yorumlanması", 
         "McNemar Testinin Python ile Uygulanması", "McNemar Testinin Güçlü ve Zayıf Yönleri", 
         "Uygulamalı Örnekler", "Sonuç ve Özet", "Kaynaklar"]
@@ -34,8 +34,6 @@ if choice == "Giriş":
     giris.goster_giris()
 elif choice == "McNemar Testinin Temelleri":
     mcnemar_temelleri.goster_temeller()
-elif choice == "Kullanım Alanı":
-    kullanim_alani.goster_kullanim_alani()
 elif choice == "McNemar Testinin Matematiksel Temeli":
     matematiksel_temel.goster_matematiksel_temel()
 elif choice == "McNemar Testinin Adımları":
