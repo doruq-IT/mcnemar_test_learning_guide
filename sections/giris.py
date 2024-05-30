@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-#from navigation import next_button
 
 def goster_giris():
     # Bölüm 1: McNemar Testinin Tanımı
@@ -42,4 +41,3 @@ def goster_giris():
         st.write("""
         McNemar testi hakkında daha fazla bilgi edinmek için rehberimizin diğer bölümlerine göz atabilirsiniz. Her bölümde testin farklı yönlerini keşfedecek ve nasıl uygulanacağını adım adım öğreneceksiniz.
         """)
-    #next_button("Giriş", "McNemar Testinin Temelleri'ne Git")

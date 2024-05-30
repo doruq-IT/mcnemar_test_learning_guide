@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import math
-#from navigation import next_button
 
 def goster_matematiksel_temel():
     # Başlık ve Giriş
@@ -92,5 +91,3 @@ print('p-value:', p_value)
     st.write("""
     Bu test, küçük örneklem boyutlarında daha doğru sonuçlar verir. Özetle, McNemar testi için chi-kare istatistiği ve kesin McNemar testi (binom testi) iki farklı yöntemdir. Chi-kare istatistiği, daha büyük örneklem boyutları için uygundur, ancak küçük örneklem boyutlarında kesin McNemar testi daha doğrudur.
     """)
-
-    #next_button("test_adimlari", "McNemar Testinin Adımları'na Git")

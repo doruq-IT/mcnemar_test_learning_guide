@@ -1,5 +1,4 @@
 import streamlit as st
-#from navigation import next_button
 
 def goster_sorular():
     # Başlık ve Giriş
@@ -91,5 +90,3 @@ print('p-value (Binom Test):', p_value_binom)
     st.write("""
     Bu sıkça sorulan sorular ve yanıtları, McNemar testi hakkında temel bilgileri ve uygulama detaylarını öğrenmenize yardımcı olacaktır.
     """)
-    
-    #next_button("matematiksel_temel", "McNemar Testinin Matematiksel Temeli'ne Git")

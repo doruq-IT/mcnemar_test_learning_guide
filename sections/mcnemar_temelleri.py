@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-#from navigation import next_button
 
 def goster_temeller():
     # Başlık ve Giriş
@@ -104,5 +103,3 @@ def goster_temeller():
     st.write("""
     Bu örnekler, McNemar testinin farklı alanlarda nasıl kullanılabileceğini ve sonuçların nasıl yorumlanabileceğini göstermektedir. Bu test, özellikle bağımlı örnekler ve eşleştirilmiş verilerle çalışırken ikili sonuçları karşılaştırmak için çok uygundur.
     """)
-    
-    #next_button("McNemar Testinin Temelleri", "Kullanım Alanı'na Git")

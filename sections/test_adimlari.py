@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import scipy.stats as stats
-#from navigation import next_button
 
 def goster_test_adimlari():
     # Başlık ve Giriş
@@ -112,5 +111,3 @@ print('p-value:', p_value)
     3. Chi-kare istatistiğini hesaplamak.
     4. P-değerini hesaplamak ve sonuçları yorumlamak.
     """)
-    
-    #next_button("testin_yorumu", "McNemar Testinin Yorumlanması'na Git")

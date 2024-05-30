@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import chi2
-#from navigation import next_button
 
 def goster_ornekler():
     # Başlık ve Giriş
@@ -131,5 +130,3 @@ plt.show()
     ax.legend()
 
     st.pyplot(fig)
-    
-    #next_button("sonuc", "Sonuç ve Özet'e Git")

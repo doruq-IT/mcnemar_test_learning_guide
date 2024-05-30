@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 from scipy.stats import binomtest, chi2
-#from navigation import next_button
 
 def goster_python_uygulama():
     # Başlık ve Giriş
@@ -112,5 +111,3 @@ print('p-value (Binom Test):', p_value_binom)
     st.write("""
     Bu kod, McNemar testini manuel olarak hesaplamak ve sonuçları yorumlamak için gerekli tüm adımları içerir. Yukarıdaki örnekte, chi-kare istatistiği ve p-değerlerini hesapladık. Sonuçları, belirlenen anlamlılık düzeyi (genellikle 0.05) ile karşılaştırarak yorumlayabiliriz. Eğer p-değeri 0.05'ten küçükse, null hipotezi reddederiz ve alternatif hipotezi kabul ederiz. Bu, iki durum arasında anlamlı bir fark olduğunu gösterir.
     """)
-    
-    #next_button("guclu_ve_zayif_yonler", "McNemar Testinin Güçlü ve Zayıf Yönleri'ne Git")

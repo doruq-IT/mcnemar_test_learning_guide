@@ -1,5 +1,4 @@
 import streamlit as st
-#from navigation import next_button
 
 def goster_guclu_ve_zayif_yonler():
     # Başlık ve Giriş
@@ -69,5 +68,3 @@ def goster_guclu_ve_zayif_yonler():
     st.write("""
     Özetle, McNemar testinin bazı güçlü yönleri ve sınırlamaları vardır. Test, bağımlı örneklerle çalışırken ve ikili sonuçlarla uğraşırken oldukça etkili ve kullanışlıdır. Ancak, daha fazla kategorili veriler veya bağımsız örneklerle çalışmak için uygun değildir. Bu avantajlar ve dezavantajlar göz önünde bulundurularak, McNemar testinin ne zaman ve nasıl kullanılacağını belirlemek önemlidir.
     """)
-    
-    #next_button("ornekler", "Uygulamalı Örnekler'ne Git")
