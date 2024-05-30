@@ -1,4 +1,3 @@
-# sections/python_uygulama.py
 import streamlit as st
 import numpy as np
 from scipy.stats import chi2, binomtest

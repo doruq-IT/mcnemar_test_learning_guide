@@ -1,6 +1,4 @@
-# sections/giris.py
 import streamlit as st
-
 def goster_giris():
     st.subheader("McNemar Testinin Tanımı")
     st.write("""
