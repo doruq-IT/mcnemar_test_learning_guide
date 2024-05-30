@@ -2,13 +2,6 @@ import streamlit as st
 import pandas as pd
 
 def goster_giris():
-    # Başlık ve Giriş
-    st.title("🔍 McNemar Testi Öğrenme Rehberi")
-    st.markdown("""
-    ### 💡 Hoş Geldiniz!
-    Bu rehber, **McNemar testinin** ne olduğunu, nasıl uygulanacağını ve sonuçların nasıl yorumlanacağını öğrenmek isteyenler için hazırlanmıştır. Soldaki menüyü kullanarak rehberdeki konulara göz atabilirsiniz.
-    """)
-    
     # Bölüm 1: McNemar Testinin Tanımı
     st.header("📊 McNemar Testinin Tanımı")
     st.write("""
