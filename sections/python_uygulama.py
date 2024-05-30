@@ -112,3 +112,5 @@ print('p-value (Binom Test):', p_value_binom)
     st.write("""
     Bu kod, McNemar testini manuel olarak hesaplamak ve sonuçları yorumlamak için gerekli tüm adımları içerir. Yukarıdaki örnekte, chi-kare istatistiği ve p-değerlerini hesapladık. Sonuçları, belirlenen anlamlılık düzeyi (genellikle 0.05) ile karşılaştırarak yorumlayabiliriz. Eğer p-değeri 0.05'ten küçükse, null hipotezi reddederiz ve alternatif hipotezi kabul ederiz. Bu, iki durum arasında anlamlı bir fark olduğunu gösterir.
     """)
+    
+    next_button("matematiksel_temel", "McNemar Testinin Matematiksel Temeli'ne Git")

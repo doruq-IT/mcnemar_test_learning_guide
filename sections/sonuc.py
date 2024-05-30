@@ -45,3 +45,5 @@ def goster_sonuc():
     st.write("""
     Sonuç olarak, McNemar testi, bağımlı örneklerle çalışan araştırmalar için güçlü bir araçtır. Bu testi doğru şekilde kullanarak, aynı bireyler üzerindeki farklı zamanlarda veya koşullardaki değişiklikleri anlamlı bir şekilde analiz edebilirsiniz.
     """)
+    
+    next_button("matematiksel_temel", "McNemar Testinin Matematiksel Temeli'ne Git")

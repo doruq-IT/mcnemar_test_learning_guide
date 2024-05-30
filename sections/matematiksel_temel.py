@@ -92,3 +92,5 @@ print('p-value:', p_value)
     st.write("""
     Bu test, küçük örneklem boyutlarında daha doğru sonuçlar verir. Özetle, McNemar testi için chi-kare istatistiği ve kesin McNemar testi (binom testi) iki farklı yöntemdir. Chi-kare istatistiği, daha büyük örneklem boyutları için uygundur, ancak küçük örneklem boyutlarında kesin McNemar testi daha doğrudur.
     """)
+
+    next_button("matematiksel_temel", "McNemar Testinin Matematiksel Temeli'ne Git")

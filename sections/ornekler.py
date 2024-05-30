@@ -131,3 +131,5 @@ plt.show()
     ax.legend()
 
     st.pyplot(fig)
+    
+    next_button("matematiksel_temel", "McNemar Testinin Matematiksel Temeli'ne Git")

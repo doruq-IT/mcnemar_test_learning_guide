@@ -112,3 +112,5 @@ print('p-value:', p_value)
     3. Chi-kare istatistiğini hesaplamak.
     4. P-değerini hesaplamak ve sonuçları yorumlamak.
     """)
+    
+    next_button("matematiksel_temel", "McNemar Testinin Matematiksel Temeli'ne Git")

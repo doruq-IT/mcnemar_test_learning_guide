@@ -71,3 +71,5 @@ def goster_kaynaklar():
     st.write("""
     Bu kaynaklar, McNemar testi ve diğer ileri düzey istatistiksel testler hakkında daha fazla bilgi edinmek isteyenler için mükemmel başlangıç noktalarıdır. Bu kaynakları inceleyerek, istatistiksel analiz becerilerinizi geliştirebilir ve daha karmaşık veri analizlerini gerçekleştirebilirsiniz.
     """)
+    
+    next_button("matematiksel_temel", "McNemar Testinin Matematiksel Temeli'ne Git")

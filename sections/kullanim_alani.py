@@ -72,3 +72,5 @@ def goster_kullanim_alani():
     df4 = pd.DataFrame(data4, index=['Eski Ambalaj: Beğendi', 'Eski Ambalaj: Beğenmedi'])
     st.table(df4)
     st.write("Bu tabloyu kullanarak, yeni ambalajın tüketici algısı üzerindeki etkisini McNemar testi ile değerlendirebilirsiniz.")
+    
+    next_button("matematiksel_temel", "McNemar Testinin Matematiksel Temeli'ne Git")
