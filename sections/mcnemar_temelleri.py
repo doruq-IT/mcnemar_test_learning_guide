@@ -103,5 +103,3 @@ def goster_temeller():
     st.write("""
     Bu örnekler, McNemar testinin farklı alanlarda nasıl kullanılabileceğini ve sonuçların nasıl yorumlanabileceğini göstermektedir. Bu test, özellikle bağımlı örnekler ve eşleştirilmiş verilerle çalışırken ikili sonuçları karşılaştırmak için çok uygundur.
     """)
-
-# main.py dosyasında gerekli importların ve fonksiyon çağrılarının yapıldığından emin olun

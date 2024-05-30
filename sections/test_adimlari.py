@@ -111,5 +111,3 @@ print('p-value:', p_value)
     3. Chi-kare istatistiğini hesaplamak.
     4. P-değerini hesaplamak ve sonuçları yorumlamak.
     """)
-
-# main.py dosyasında gerekli importların ve fonksiyon çağrılarının yapıldığından emin olun
