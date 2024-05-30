@@ -19,9 +19,9 @@ menu = ["Giriş", "McNemar Testinin Temelleri", "Kullanım Alanı", "McNemar Tes
         "McNemar Testinin Python ile Uygulanması", "McNemar Testinin Güçlü ve Zayıf Yönleri", 
         "Uygulamalı Örnekler", "Sonuç ve Özet", "Kaynaklar"]
 
-choice = get_current_page()
-
 # choice = st.sidebar.selectbox("Bölümler", menu)
+
+choice = get_current_page()
 
 if choice not in menu:
     choice = "Giriş"
