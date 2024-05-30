@@ -4,7 +4,8 @@ from navigation import next_button, get_current_page, set_initial_page
 
 
 # Başlangıç sayfasını ayarla
-set_initial_page("Giriş")
+if 'initialized' not in st.session_state:
+    set_initial_page("Giriş")
 
 # Sayfa Başlığı
 st.title("McNemar Testi Öğrenme Rehberi")
