@@ -16,7 +16,7 @@ def goster_giris():
     """)
 
     # Görsel veya İllüstrasyon
-    st.image("https://commons.wikimedia.org/wiki/File:Choix_des_risques_de_premiere_et_deuxieme_espece.png", caption="McNemar Testinin Kullanım Alanları")
+    st.image("https://www.researchgate.net/profile/Joao-Gama/publication/221653555/figure/fig4/AS:394058305425409@1470962230166/The-evolution-of-signed-McNemar-statistic-between-two-algorithms-Vertical-dashed-lines.png", caption="McNemar Testinin Kullanım Alanları")
 
     # Bölüm 2: Kullanım Alanları
     st.header("🌐 Kullanım Alanları")
