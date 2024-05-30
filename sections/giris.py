@@ -43,5 +43,11 @@ def goster_giris():
     st.write("""
     Bu formül, iki koşul arasındaki farkın istatistiksel olarak anlamlı olup olmadığını belirlemek için kullanılır.
     """)
+    
+    if st.button('📚 Daha Fazla Bilgi Edinin'):
+        st.write("""
+        McNemar testi hakkında daha fazla bilgi edinmek için rehberimizin diğer bölümlerine göz atabilirsiniz. Her bölümde testin farklı yönlerini keşfedecek ve nasıl uygulanacağını adım adım öğreneceksiniz.
+        """)
+
 
 # main.py dosyasında gerekli importların ve fonksiyon çağrılarının yapıldığından emin olun
