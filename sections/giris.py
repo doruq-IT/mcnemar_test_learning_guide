@@ -6,7 +6,7 @@ def goster_giris():
     st.title("🔍 McNemar Testi Öğrenme Rehberi")
     st.markdown("""
     ### 💡 Hoş Geldiniz!
-    Bu rehber, **McNemar testinin** ne olduğunu, nasıl uygulanacağını ve sonuçların nasıl yorumlanacağını öğrenmek isteyenler için hazırlanmıştır. Aşağıdaki menüyü kullanarak rehberdeki konulara göz atabilirsiniz.
+    Bu rehber, **McNemar testinin** ne olduğunu, nasıl uygulanacağını ve sonuçların nasıl yorumlanacağını öğrenmek isteyenler için hazırlanmıştır. Soldaki menüyü kullanarak rehberdeki konulara göz atabilirsiniz.
     """)
     
     # Bölüm 1: McNemar Testinin Tanımı

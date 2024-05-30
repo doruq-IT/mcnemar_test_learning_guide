@@ -5,7 +5,7 @@ from sections import giris, mcnemar_temelleri, kullanim_alani, matematiksel_teme
 st.title("McNemar Testi Öğrenme Rehberi")
 st.write("""
 Bu rehber, McNemar testinin ne olduğunu, nasıl uygulanacağını ve sonuçların nasıl yorumlanacağını öğrenmek isteyenler için hazırlanmıştır.
-Aşağıdaki menüyü kullanarak rehberdeki konulara göz atabilirsiniz.
+Soldaki menüyü kullanarak rehberdeki konulara göz atabilirsiniz.
 """)
 
 # Menü
