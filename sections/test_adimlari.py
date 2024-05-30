@@ -113,4 +113,4 @@ print('p-value:', p_value)
     4. P-değerini hesaplamak ve sonuçları yorumlamak.
     """)
     
-    next_button("testin_yorumu", "McNemar Testinin Matematiksel Temeli'ne Git")
+    next_button("testin_yorumu", "McNemar Testinin Yorumlanması'na Git")

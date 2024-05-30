@@ -132,4 +132,4 @@ plt.show()
 
     st.pyplot(fig)
     
-    next_button("sonuc", "McNemar Testinin Matematiksel Temeli'ne Git")
+    next_button("sonuc", "Sonuç ve Özet'e Git")
