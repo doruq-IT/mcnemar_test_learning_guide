@@ -1,45 +1,47 @@
 import streamlit as st
+import pandas as pd
 
 def goster_giris():
     # Başlık ve Giriş
     st.title("🔍 McNemar Testi Öğrenme Rehberi")
     st.markdown("""
     ### 💡 Hoş Geldiniz!
-    Bu rehber, **McNemar testinin** ne olduğunu, nasıl uygulanacağını ve sonuçların nasıl yorumlanacağını öğrenmek isteyenler için hazırlanmıştır.
-    Aşağıdaki menüyü kullanarak rehberdeki konulara göz atabilirsiniz.
+    Bu rehber, **McNemar testinin** ne olduğunu, nasıl uygulanacağını ve sonuçların nasıl yorumlanacağını öğrenmek isteyenler için hazırlanmıştır. Aşağıdaki menüyü kullanarak rehberdeki konulara göz atabilirsiniz.
     """)
     
     # Bölüm 1: McNemar Testinin Tanımı
     st.header("📊 McNemar Testinin Tanımı")
     st.write("""
-    McNemar testi, bağımlı iki ikili veri kümesi arasındaki oranları karşılaştırmak için kullanılan bir istatistiksel testtir. Bu test, özellikle çift-yönlü tablo verilerinde kullanışlıdır ve belirli bir tedavi veya müdahalenin etkisini değerlendirmek amacıyla sıklıkla kullanılır. McNemar testi, örneğin aynı bireylerin iki farklı zaman noktası veya iki farklı koşul altındaki sonuçlarını karşılaştırmak için idealdir.
+    McNemar testi, bağımlı iki ikili veri kümesi arasındaki oranların karşılaştırılması için kullanılan bir istatistiksel testtir. Bu test, özellikle çift-yönlü tablo verilerinde kullanışlıdır ve belirli bir tedavi veya müdahalenin etkisini değerlendirmek amacıyla sıklıkla kullanılır. McNemar testi, örneğin aynı bireylerin iki farklı zaman noktası veya iki farklı koşul altındaki sonuçlarını karşılaştırmak için idealdir.
+    
+    Örneğin, bir grup öğrencinin bir eğitim programı öncesi ve sonrası bilgi seviyelerini karşılaştırmak istiyorsunuz. Bu durumda, McNemar testi, eğitim programının bilgi seviyesinde anlamlı bir değişiklik yaratıp yaratmadığını belirlemek için kullanılabilir.
+    
+    Bu test, bağımsız iki grubu karşılaştırmak için değil, aynı grup üzerinde yapılan iki farklı ölçümü karşılaştırmak için tasarlanmıştır. Testin uygulanması için bir 2x2 kontenjans tablosu kullanılır ve bu tablo şu şekilde görünebilir:
     """)
 
-    # Görsel veya İllüstrasyon
-    st.image("https://www.researchgate.net/profile/Joao-Gama/publication/221653555/figure/fig4/AS:394058305425409@1470962230166/The-evolution-of-signed-McNemar-statistic-between-two-algorithms-Vertical-dashed-lines.png", caption="McNemar Testinin Kullanım Alanları")
+    # Örnek Kontenjans Tablosu
+    st.subheader("Örnek 2x2 Kontenjans Tablosu")
+    data = {'Koşul B: Evet': ['a', 'c'], 'Koşul B: Hayır': ['b', 'd']}
+    df = pd.DataFrame(data, index=['Koşul A: Evet', 'Koşul A: Hayır'])
+    st.table(df)
 
-    # Bölüm 2: Kullanım Alanları
-    st.header("🌐 Kullanım Alanları")
     st.write("""
-    McNemar testi, birçok farklı alanda kullanılabilir. İşte birkaç örnek:
-    - **Tıp ve Sağlık Araştırmaları**: Hastaların tedaviye verdikleri yanıtların değerlendirilmesi.
-    - **Psikoloji ve Eğitim**: Öğrencilerin iki farklı öğrenme yöntemine verdikleri tepkilerin karşılaştırılması.
-    - **Sosyal Bilimler**: Sosyal davranış değişikliklerinin iki farklı zaman diliminde incelenmesi.
-    - **Pazarlama Araştırmaları**: Tüketici tercih ve alışkanlıklarının iki farklı kampanya arasında karşılaştırılması.
+    Bu tablodaki hücreler şu şekilde tanımlanır:
+    - **a**: Her iki koşulda da "Evet" olan gözlemler.
+    - **b**: İlk koşulda "Evet" ve ikinci koşulda "Hayır" olan gözlemler.
+    - **c**: İlk koşulda "Hayır" ve ikinci koşulda "Evet" olan gözlemler.
+    - **d**: Her iki koşulda da "Hayır" olan gözlemler.
+    
+    McNemar testi, özellikle **b** ve **c** hücrelerindeki değişikliklere odaklanır ve şu formülle hesaplanır:
     """)
 
-    # İlginç Gerçekler
-    st.header("📌 İlginç Gerçekler")
+    # McNemar Testi Formülü
+    st.latex(r'''
+    \chi^2 = \frac{(b - c)^2}{b + c}
+    ''')
+    
     st.write("""
-    - McNemar testi, özellikle klinik deneylerde sıklıkla kullanılır.
-    - İki farklı zaman diliminde aynı grubun verilerini karşılaştırmak için idealdir.
-    - Psikoloji ve eğitimde öğrenci performanslarını değerlendirmek için yaygın olarak kullanılır.
+    Bu formül, iki koşul arasındaki farkın istatistiksel olarak anlamlı olup olmadığını belirlemek için kullanılır.
     """)
-
-    # Ek Bilgi Butonu
-    if st.button('📚 Daha Fazla Bilgi Edinin'):
-        st.write("""
-        McNemar testi hakkında daha fazla bilgi edinmek için rehberimizin diğer bölümlerine göz atabilirsiniz. Her bölümde testin farklı yönlerini keşfedecek ve nasıl uygulanacağını adım adım öğreneceksiniz.
-        """)
 
 # main.py dosyasında gerekli importların ve fonksiyon çağrılarının yapıldığından emin olun
