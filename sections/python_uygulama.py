@@ -26,8 +26,8 @@ from scipy.stats import binomtest
     """)
 
     st.write("""
-    | Program Sonrası: Anladı | Program Sonrası: Anlamadı |
-    |-------------------------|---------------------------|
+    |                         | Program Sonrası: Anladı | Program Sonrası: Anlamadı |
+    |-------------------------|-------------------------|---------------------------|
     | **Program Öncesi: Anladı** | 20 | 10 |
     | **Program Öncesi: Anlamadı** | 5 | 15 |
     """)
