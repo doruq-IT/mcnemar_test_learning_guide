@@ -32,21 +32,7 @@ def goster_temeller():
     st.write("""
     McNemar testi, ikili sonuçlarla çalışır. İkili sonuçlar, iki olası durumu ifade eder: "Evet/Hayır", "Başarılı/Başarısız", "Anladı/Anlamadı" gibi. Bu sonuçlar, 2x2 kontenjans tablosunda gösterilir.
     """)
-
-    # Örnek Kontenjans Tablosu
-    st.subheader("2x2 Kontenjans Tablosu:")
-    data = {'Koşul B: Evet': ['a', 'c'], 'Koşul B: Hayır': ['b', 'd']}
-    df = pd.DataFrame(data, index=['Koşul A: Evet', 'Koşul A: Hayır'])
-    st.table(df)
-
-    st.write("""
-    Bu tablo şu şekilde yorumlanır:
-    - **a**: Her iki koşulda da "Evet" olan gözlemler.
-    - **b**: İlk koşulda "Evet", ikinci koşulda "Hayır" olan gözlemler.
-    - **c**: İlk koşulda "Hayır", ikinci koşulda "Evet" olan gözlemler.
-    - **d**: Her iki koşulda da "Hayır" olan gözlemler.
-    """)
-
+    
     st.write("""
     **Örnek:** Bir eğitim programının etkisini değerlendirdiğimizi düşünelim. Öğrencilerin program öncesi ve sonrası bilgilerini "Anladı/Anlamadı" olarak kaydediyoruz.
     """)
