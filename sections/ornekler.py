@@ -21,8 +21,8 @@ def goster_ornekler():
     """)
 
     st.write("""
-    | Program Sonrası: Anladı | Program Sonrası: Anlamadı |
-    |-------------------------|---------------------------|
+    |                         | Program Sonrası: Anladı | Program Sonrası: Anlamadı |
+    |-------------------------|-------------------------|---------------------------|
     | **Program Öncesi: Anladı** | 20 | 10 |
     | **Program Öncesi: Anlamadı** | 5 | 15 |
     """)
@@ -64,8 +64,8 @@ print('p-value:', p_value)
     """)
 
     st.write("""
-    | Tedavi Sonrası: İyileşti | Tedavi Sonrası: İyileşmedi |
-    |--------------------------|----------------------------|
+    |                          | Tedavi Sonrası: İyileşti | Tedavi Sonrası: İyileşmedi |
+    |--------------------------|--------------------------|----------------------------|
     | **Tedavi Öncesi: İyileşti** | 30 | 10 |
     | **Tedavi Öncesi: İyileşmedi** | 8 | 12 |
     """)
