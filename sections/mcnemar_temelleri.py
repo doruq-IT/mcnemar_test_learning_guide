@@ -24,10 +24,6 @@ def goster_temeller():
     """)
 
     st.write("""
-    **Örnek:** Bir grup öğrencinin bir eğitim programı öncesi ve sonrası test sonuçlarını karşılaştırdığımızı düşünelim. Aynı öğrenciler iki kez test edildiği için, bu bağımlı örnekler ve eşleştirilmiş verilerle çalıştığımız anlamına gelir.
-    """)
-    
-    st.write("""
     **Örnek:** Bir eğitim programının etkisini değerlendirdiğimizi düşünelim. Öğrencilerin program öncesi ve sonrası bilgilerini "Anladı/Anlamadı" olarak kaydediyoruz.
     """)
 
