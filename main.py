@@ -12,7 +12,7 @@ Soldaki menüyü kullanarak rehberdeki konulara göz atabilirsiniz.
 menu = ["Giriş", "McNemar Testinin Temelleri", "McNemar Testinin Matematiksel Temeli", 
         "McNemar Testinin Adımları", "McNemar Testinin Yorumlanması", 
         "McNemar Testinin Python ile Uygulanması", "McNemar Testinin Güçlü ve Zayıf Yönleri", 
-        "Uygulamalı Örnekler", "Sonuç ve Özet", "Kaynaklar"]
+        "Uygulamalı Örnekler", "Sonuç ve Özet"]
 
 choice = st.sidebar.selectbox("Bölümler", menu)
 
@@ -35,7 +35,5 @@ elif choice == "Uygulamalı Örnekler":
     ornekler.goster_ornekler()
 elif choice == "Sonuç ve Özet":
     sonuc.goster_sonuc()
-elif choice == "Kaynaklar":
-    kaynaklar.goster_kaynaklar()
 elif choice == "Sık Sorulan Sorular(SSS)":
     sorular.goster_sorular()
