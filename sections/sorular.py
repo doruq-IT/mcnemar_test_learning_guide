@@ -67,7 +67,8 @@ chi_square = (b - c) ** 2 / (b + c)
 p_value_chi2 = chi2.sf(chi_square, 1)
 
 # Binom testi
-p_value_binom = binomtest([b, c])
+n = b + c
+p_value_binom = binomtest(b, n=n, p=0.5, alternative='two-sided').pvalue
 
 print('Chi-square Statistic:', chi_square)
 print('p-value (Chi-square):', p_value_chi2)
