@@ -9,27 +9,24 @@ def goster_matematiksel_temel():
     # Chi-Kare Testi ve McNemar Testi Arasındaki İlişki
     st.header("📊 Chi-Kare Testi ve McNemar Testi Arasındaki İlişki")
     st.write("""
-    Chi-kare testi ve McNemar testi, her ikisi de kategorik verileri analiz etmek için kullanılan istatistiksel testlerdir, ancak farklı amaçlara hizmet ederler.
+    Chi-kare testi ve McNemar testi, kategorik verileri analiz etmek için kullanılır. Ancak, Chi-kare testi bağımsız gruplar arasındaki farkları incelerken, McNemar testi aynı grubun farklı zamanlardaki sonuçlarını karşılaştırır.
     """)
 
     st.subheader("Chi-Kare Testi:")
     st.markdown("""
-    - İki bağımsız kategorik veri kümesi arasındaki ilişkiyi test eder.
-    - Örneğin, iki farklı grubun belirli bir ürünü tercih edip etmediğini test etmek için kullanılır.
+    - İki bağımsız veri kümesi arasındaki ilişkiyi test eder.
+    - Örneğin, iki farklı grubun belirli bir ürünü tercih edip etmediğini test eder.
     """)
 
     st.subheader("McNemar Testi:")
     st.markdown("""
-    - Bağımlı iki ikili veri kümesi arasındaki oranları karşılaştırmak için kullanılır.
-    - Aynı bireylerin iki farklı zamanda veya koşulda ölçülen sonuçlarını karşılaştırır.
+    - Aynı grubun iki farklı zaman veya koşulda ölçülen sonuçlarını karşılaştırır.
     """)
-
-    st.write("Özetle, chi-kare testi bağımsız örnekler için kullanılırken, McNemar testi bağımlı örnekler için kullanılır.")
 
     # Chi-Kare İstatistiğinin Hesaplanması
     st.header("📐 Chi-Kare İstatistiğinin Hesaplanması")
     st.write("""
-    McNemar testinde, chi-kare istatistiği özel bir formülle hesaplanır. Bu formül, b ve c hücrelerindeki farkların anlamlı olup olmadığını belirlemek için kullanılır.
+    McNemar testinde, chi-kare istatistiği şu formülle hesaplanır:
     """)
 
     st.latex(r'''
@@ -38,9 +35,8 @@ def goster_matematiksel_temel():
 
     st.write("""
     Burada:
-    - **b**: İlk koşulda "Evet", ikinci koşulda "Hayır" olan gözlemlerin sayısı.
-    - **c**: İlk koşulda "Hayır", ikinci koşulda "Evet" olan gözlemlerin sayısı.
-    Bu formül, b ve c hücrelerindeki değişiklikleri değerlendirir. Eğer b ve c hücrelerindeki değerler arasında büyük bir fark varsa, bu testin sonucu anlamlı olabilir.
+    - **b**: İlk koşulda "Evet", ikinci koşulda "Hayır" olan gözlemler.
+    - **c**: İlk koşulda "Hayır", ikinci koşulda "Evet" olan gözlemler.
     """)
 
     # Örnek Tablo ve Hesaplama
@@ -67,13 +63,12 @@ def goster_matematiksel_temel():
     # Kesin McNemar Testi ve Binom Testi
     st.header("🎯 Kesin McNemar Testi ve Binom Testi")
     st.write("""
-    McNemar testi, özellikle küçük örneklem boyutlarında (örneğin, b + c < 25) kesin test olarak da yapılabilir. Bu durumda binom testi kullanılır. Binom testi, b ve c hücrelerindeki farkların anlamlı olup olmadığını belirlemek için binom dağılımını kullanır.
+    Küçük örneklem boyutlarında McNemar testi binom testi olarak yapılabilir. Bu yöntem, daha doğru sonuçlar verir.
     """)
 
     st.subheader("Örnek: Binom Testi ile Kesin McNemar Testi")
     st.write("""
-    Kesin McNemar testinde, b ve c değerleri kullanılarak binom testi yapılır. Örneğin:
-    - **b = 10** ve **c = 5** ise, binom testi şu şekilde yapılır:
+    Binom testi, b ve c hücrelerindeki farkların anlamlı olup olmadığını belirlemek için kullanılır. Örneğin:
     """)
 
     st.code("""
@@ -89,5 +84,6 @@ print('p-value:', p_value)
     """, language='python')
 
     st.write("""
-    Bu test, küçük örneklem boyutlarında daha doğru sonuçlar verir. Özetle, McNemar testi için chi-kare istatistiği ve kesin McNemar testi (binom testi) iki farklı yöntemdir. Chi-kare istatistiği, daha büyük örneklem boyutları için uygundur, ancak küçük örneklem boyutlarında kesin McNemar testi daha doğrudur.
+    Bu test, küçük örneklem boyutlarında daha doğru sonuçlar verir.
     """)
+

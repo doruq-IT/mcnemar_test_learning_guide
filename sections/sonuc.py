@@ -7,18 +7,18 @@ def goster_sonuc():
     # McNemar Testinin Genel Değerlendirmesi
     st.header("🔍 McNemar Testinin Genel Değerlendirmesi")
     st.write("""
-    McNemar testi, bağımlı iki ikili veri kümesi arasındaki oranları karşılaştırmak için kullanılan basit ama güçlü bir istatistiksel testtir. Test, özellikle aynı bireylerin farklı zamanlarda veya koşullarda ölçülen sonuçlarını karşılaştırmak için tasarlanmıştır. Bu testin kullanımı şu durumlarda idealdir:
+    McNemar testi, bağımlı iki ikili veri kümesi arasındaki oranları karşılaştırmak için kullanılan basit ve güçlü bir istatistiksel testtir. Aynı bireylerin farklı zamanlardaki veya koşullardaki sonuçlarını karşılaştırmak için idealdir. Kullanım alanları:
     """)
 
     st.markdown("""
-    - **Eğitim Programları:** Bir eğitim programının öncesi ve sonrası etkilerini değerlendirmek.
-    - **Tıbbi Tedaviler:** Bir tedavi öncesi ve sonrası hastaların sağlık durumlarını karşılaştırmak.
-    - **Psikolojik Araştırmalar:** Bir terapi öncesi ve sonrası bireylerin durumlarını analiz etmek.
-    - **Pazarlama Araştırmaları:** Bir reklam kampanyasının öncesi ve sonrası etkilerini incelemek.
+    - **Eğitim Programları:** Program öncesi ve sonrası etkileri değerlendirmek.
+    - **Tıbbi Tedaviler:** Tedavi öncesi ve sonrası sağlık durumlarını karşılaştırmak.
+    - **Psikolojik Araştırmalar:** Terapi öncesi ve sonrası durumları analiz etmek.
+    - **Pazarlama Araştırmaları:** Reklam kampanyası öncesi ve sonrası etkileri incelemek.
     """)
 
     st.write("""
-    McNemar testi, bağımsız iki grup arasındaki farkları inceleyen chi-kare testinden farklı olarak, bağımlı örneklerle çalışır. Bu özellik, aynı bireyler üzerinde yapılan ölçümlerde daha doğru ve anlamlı sonuçlar elde etmemizi sağlar.
+    McNemar testi, bağımsız iki grup arasındaki farkları inceleyen chi-kare testinden farklı olarak, aynı bireyler üzerinde yapılan ölçümlerde daha doğru sonuçlar verir.
     """)
 
     # Özet ve Öneriler
@@ -26,21 +26,22 @@ def goster_sonuc():
 
     st.subheader("Özet")
     st.write("""
-    - **Kullanım Alanları:** McNemar testi, ikili sonuçlarla çalışan ve aynı bireylerin farklı zamanlardaki veya koşullardaki sonuçlarını karşılaştıran araştırmalarda kullanılır.
-    - **Temelleri:** Test, b ve c hücrelerindeki farkları değerlendirir ve bu farkların anlamlı olup olmadığını belirlemek için chi-kare istatistiği veya binom testi kullanılır.
-    - **Yorumlama:** P-değeri kullanılarak sonuçların anlamlılığı değerlendirilir. P-değeri 0.05'ten küçükse, iki durum arasında anlamlı bir fark olduğu kabul edilir.
-    - **Güçlü Yönler:** Bağımlı örneklerle çalışırken etkili ve kullanışlıdır, hesaplaması nispeten basittir.
+    - **Kullanım Alanları:** İkili sonuçlarla çalışan ve aynı bireylerin farklı zamanlardaki sonuçlarını karşılaştıran araştırmalarda kullanılır.
+    - **Temelleri:** b ve c hücrelerindeki farkları değerlendirir ve chi-kare istatistiği veya binom testi ile analiz eder.
+    - **Yorumlama:** P-değeri 0.05'ten küçükse, iki durum arasında anlamlı bir fark olduğu kabul edilir.
+    - **Güçlü Yönler:** Bağımlı örneklerle çalışırken etkili ve kullanışlıdır, hesaplaması basittir.
     - **Sınırlamalar:** Yalnızca ikili sonuçlarla çalışabilir ve bağımlı örnekler gerektirir.
     """)
 
     st.subheader("Öneriler")
     st.markdown("""
-    - **Bağımlı Örneklerle Çalışın:** McNemar testi, aynı bireyler üzerinde yapılan ölçümler için tasarlandığından, bağımlı örneklerle çalışmak için idealdir. Farklı zamanlarda veya koşullarda ölçülen aynı bireylerin sonuçlarını analiz etmek için bu testi kullanabilirsiniz.
-    - **Küçük Örneklem Boyutlarında Kesin McNemar Testi Kullanın:** Küçük örneklem boyutlarında kesin McNemar testi (binom testi) kullanmak daha doğru sonuçlar verir. Bu, özellikle b ve c hücrelerindeki gözlem sayıları düşük olduğunda önemlidir.
-    - **Verileri Görselleştirin:** Sonuçları daha iyi anlamak ve sunmak için verilerinizi grafiklerle görselleştirin. Bar grafikleri veya diğer uygun görselleştirme teknikleri, analizlerinizi daha anlaşılır hale getirir.
-    - **Anlamlılık Düzeyini Dikkate Alın:** P-değerini belirlenen anlamlılık düzeyi (genellikle 0.05) ile karşılaştırarak sonuçlarınızı yorumlayın. P-değeri 0.05'ten küçükse, sonuçlarınızın anlamlı olduğunu ve iki durum arasında fark olduğunu kabul edin.
+    - **Bağımlı Örneklerle Çalışın:** Aynı bireyler üzerinde yapılan ölçümler için idealdir.
+    - **Küçük Örneklem Boyutlarında Binom Testi Kullanın:** Küçük örneklem boyutlarında daha doğru sonuçlar verir.
+    - **Verileri Görselleştirin:** Grafiklerle verilerinizi daha anlaşılır hale getirin.
+    - **Anlamlılık Düzeyini Dikkate Alın:** P-değerini 0.05 ile karşılaştırarak yorumlayın.
     """)
 
     st.write("""
-    Sonuç olarak, McNemar testi, bağımlı örneklerle çalışan araştırmalar için güçlü bir araçtır. Bu testi doğru şekilde kullanarak, aynı bireyler üzerindeki farklı zamanlarda veya koşullardaki değişiklikleri anlamlı bir şekilde analiz edebilirsiniz.
+    Sonuç olarak, McNemar testi, bağımlı örneklerle çalışan araştırmalar için güçlü bir araçtır. Doğru şekilde kullanarak, aynı bireyler üzerindeki değişiklikleri anlamlı bir şekilde analiz edebilirsiniz.
     """)
+

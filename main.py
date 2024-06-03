@@ -10,9 +10,10 @@ Soldaki menüyü kullanarak rehberdeki konulara göz atabilirsiniz.
 
 # Menü
 menu = ["Giriş", "McNemar Testinin Temelleri", "McNemar Testinin Matematiksel Temeli", 
-        "McNemar Testinin Adımları", "McNemar Testinin Yorumlanması", 
-        "McNemar Testinin Python ile Uygulanması", "McNemar Testinin Güçlü ve Zayıf Yönleri", 
-        "Uygulamalı Örnekler", "Sonuç ve Özet"]
+        "McNemar Testinin Güçlü ve Zayıf Yönleri", "McNemar Testinin Adımları", 
+        "Uygulamalı Örnekler", "McNemar Testinin Yorumlanması", 
+        "McNemar Testinin Python ile Uygulanması", "Sıkça Sorulan Sorular (SSS)",
+         "Sonuç ve Özet"]
 
 choice = st.sidebar.selectbox("Bölümler", menu)
 

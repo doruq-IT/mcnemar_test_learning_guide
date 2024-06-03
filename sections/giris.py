@@ -5,11 +5,11 @@ def goster_giris():
     # Bölüm 1: McNemar Testinin Tanımı
     st.header("📊 McNemar Testinin Tanımı")
     st.write("""
-    McNemar testi, bağımlı iki ikili veri kümesi arasındaki oranların karşılaştırılması için kullanılan bir istatistiksel testtir. Bu test, özellikle çift-yönlü tablo verilerinde kullanışlıdır ve belirli bir tedavi veya müdahalenin etkisini değerlendirmek amacıyla sıklıkla kullanılır. McNemar testi, örneğin aynı bireylerin iki farklı zaman noktası veya iki farklı koşul altındaki sonuçlarını karşılaştırmak için idealdir.
+    McNemar testi, aynı grup içindeki iki farklı durum veya zamandaki ikili sonuçları karşılaştıran bir istatistiksel testtir. Özellikle aynı bireylerin farklı zaman noktalarındaki sonuçlarını değerlendirmek için idealdir.
     
-    Örneğin, bir grup öğrencinin bir eğitim programı öncesi ve sonrası bilgi seviyelerini karşılaştırmak istiyorsunuz. Bu durumda, McNemar testi, eğitim programının bilgi seviyesinde anlamlı bir değişiklik yaratıp yaratmadığını belirlemek için kullanılabilir.
+    Örneğin, bir eğitim programının öğrencilerin bilgi seviyesinde değişiklik yaratıp yaratmadığını anlamak için kullanılabilir.
     
-    Bu test, bağımsız iki grubu karşılaştırmak için değil, aynı grup üzerinde yapılan iki farklı ölçümü karşılaştırmak için tasarlanmıştır. Testin uygulanması için bir 2x2 kontenjans tablosu kullanılır ve bu tablo şu şekilde görünebilir:
+    Test, bağımsız iki grubu karşılaştırmak için değil, aynı grup üzerinde yapılan iki farklı ölçümü karşılaştırmak için tasarlanmıştır. 2x2 kontenjans tablosu kullanılarak uygulanır:
     """)
 
     # Örnek Kontenjans Tablosu
@@ -19,13 +19,12 @@ def goster_giris():
     st.table(df)
 
     st.write("""
-    Bu tablodaki hücreler şu şekilde tanımlanır:
     - **a**: Her iki koşulda da "Evet" olan gözlemler.
-    - **b**: İlk koşulda "Evet" ve ikinci koşulda "Hayır" olan gözlemler.
-    - **c**: İlk koşulda "Hayır" ve ikinci koşulda "Evet" olan gözlemler.
+    - **b**: İlk koşulda "Evet", ikinci koşulda "Hayır" olan gözlemler.
+    - **c**: İlk koşulda "Hayır", ikinci koşulda "Evet" olan gözlemler.
     - **d**: Her iki koşulda da "Hayır" olan gözlemler.
     
-    McNemar testi, özellikle **b** ve **c** hücrelerindeki değişikliklere odaklanır ve şu formülle hesaplanır:
+    McNemar testi, **b** ve **c** hücrelerindeki değişikliklere odaklanır ve şu formülle hesaplanır:
     """)
 
     # McNemar Testi Formülü
@@ -34,7 +33,7 @@ def goster_giris():
     ''')
     
     st.write("""
-    Bu formül, iki koşul arasındaki farkın istatistiksel olarak anlamlı olup olmadığını belirlemek için kullanılır.
+    Bu formül, iki koşul arasındaki farkın anlamlı olup olmadığını belirlemek için kullanılır.
     """)
     
     if st.button('📚 Daha Fazla Bilgi Edinin'):
