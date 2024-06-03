@@ -13,7 +13,7 @@ def goster_giris():
     """)
 
     # Örnek Kontenjans Tablosu
-    st.subheader("Örnek 2x2 Kontenjans Tablosu")
+    st.subheader("Örnek 2x2 Kontenjans Tablosu (pd.crosstab(data['column1'], data['column2']))")
     data = {'Koşul B: Evet': ['a', 'c'], 'Koşul B: Hayır': ['b', 'd']}
     df = pd.DataFrame(data, index=['Koşul A: Evet', 'Koşul A: Hayır'])
     st.table(df)
