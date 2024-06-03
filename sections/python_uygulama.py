@@ -22,5 +22,5 @@ def goster_python_uygulama():
     st.write(f"P-değeri (Chi-square): {p_value_chi2:.2f}")
 
     # Binom testi ile kesin McNemar testi
-    p_value_binom = binomtest([b, c])
+    p_value_binom = binomtest(b, n=b+c, p=0.5, alternative='two-sided').pvalue
     st.write(f"P-değeri (Binom Testi): {p_value_binom:.2f}")
