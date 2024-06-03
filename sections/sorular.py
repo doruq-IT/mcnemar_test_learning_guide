@@ -53,7 +53,7 @@ def goster_sorular():
     """)
     st.code("""
 import numpy as np
-from scipy.stats import binom_test, chi2
+from scipy.stats import binomtest, chi2
 
 # 2x2 kontenjans tablosu
 table = np.array([[20, 10], [5, 15]])
