@@ -17,12 +17,11 @@ menu = ["Giriş", "McNemar Testinin Temelleri", "McNemar Testinin Matematiksel T
 
 choice = st.sidebar.selectbox("Bölümler", menu)
 
-# Seçime Göre Fonksiyonları Çağır
 if choice == "Giriş":
     giris.goster_giris()
 elif choice == "McNemar Testinin Temelleri":
     mcnemar_temelleri.goster_temeller()
-elif choice == "McNemar Testinin Matematik Temeli":
+elif choice == "McNemar Testinin Matematiksel Temeli":
     matematiksel_temel.goster_matematiksel_temel()
 elif choice == "McNemar Testinin Adımları":
     test_adimlari.goster_test_adimlari()

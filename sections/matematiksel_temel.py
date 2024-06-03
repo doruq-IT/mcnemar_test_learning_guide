@@ -3,10 +3,8 @@ import pandas as pd
 import math
 
 def goster_matematiksel_temel():
-    # Başlık ve Giriş
     st.title("🔍 McNemar Testinin Matematiksel Temeli")
 
-    # Chi-Kare Testi ve McNemar Testi Arasındaki İlişki
     st.header("📊 Chi-Kare Testi ve McNemar Testi Arasındaki İlişki")
     st.write("""
     Chi-kare testi ve McNemar testi, kategorik verileri analiz etmek için kullanılır. Ancak, Chi-kare testi bağımsız gruplar arasındaki farkları incelerken, McNemar testi aynı grubun farklı zamanlardaki sonuçlarını karşılaştırır.
@@ -23,7 +21,6 @@ def goster_matematiksel_temel():
     - Aynı grubun iki farklı zaman veya koşulda ölçülen sonuçlarını karşılaştırır.
     """)
 
-    # Chi-Kare İstatistiğinin Hesaplanması
     st.header("📐 Chi-Kare İstatistiğinin Hesaplanması")
     st.write("""
     McNemar testinde, chi-kare istatistiği şu formülle hesaplanır:
@@ -39,7 +36,6 @@ def goster_matematiksel_temel():
     - **c**: İlk koşulda "Hayır", ikinci koşulda "Evet" olan gözlemler.
     """)
 
-    # Örnek Tablo ve Hesaplama
     st.subheader("Örnek: Bir eğitim programının etkisini değerlendirme")
     data = {'Program Sonrası: Anladı': [20, 5], 'Program Sonrası: Anlamadı': [10, 15]}
     df = pd.DataFrame(data, index=['Program Öncesi: Anladı', 'Program Öncesi: Anlamadı'])
@@ -60,7 +56,6 @@ def goster_matematiksel_temel():
 
     st.write("Bu chi-kare istatistiği, p-değerini hesaplamak için kullanılır.")
 
-    # Kesin McNemar Testi ve Binom Testi
     st.header("🎯 Kesin McNemar Testi ve Binom Testi")
     st.write("""
     Küçük örneklem boyutlarında McNemar testi binom testi olarak yapılabilir. Bu yöntem, daha doğru sonuçlar verir.
