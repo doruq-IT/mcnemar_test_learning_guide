@@ -67,7 +67,7 @@ def goster_matematiksel_temel():
     """)
 
     st.code("""
-from scipy.stats import binom_test
+from scipy.stats import binomtest
 
 # b ve c değerleri
 b = 10
