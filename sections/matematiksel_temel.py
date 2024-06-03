@@ -74,7 +74,7 @@ b = 10
 c = 5
 
 # Binom testi
-p_value = binom_test([b, c])
+p_value = binomtest([b, c])
 print('p-value:', p_value)
     """, language='python')
 
