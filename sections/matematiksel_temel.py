@@ -86,4 +86,3 @@ print('p-value:', p_value)
     st.write("""
     Bu test, küçük örneklem boyutlarında daha doğru sonuçlar verir.
     """)
-
