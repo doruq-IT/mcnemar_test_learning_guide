@@ -76,7 +76,7 @@ print('p-value (Binom Test):', p_value_binom)
     """, language='python')
 
     st.markdown("""
-# Chi-Kare Testi ve Binom Testi Sonuçları
+## Chi-Kare Testi ve Binom Testi Sonuçları
 
 * **Chi-Kare İstatistiği:** 1.6666666666666667
 * **p-Değer (Chi-Kare):** 0.1967056024589432
