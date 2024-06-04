@@ -76,6 +76,9 @@ print('p-value (Binom Test):', p_value_binom)
     """, language='python')
 
     st.write("""
+    Chi-square Statistic: 1.6666666666666667
+    p-value (Chi-square): 0.1967056024589432 
+    p-value (Binom Test): 0.30175781249999994
     Bu sıkça sorulan sorular ve yanıtları, McNemar testi hakkında temel bilgileri öğrenmenize yardımcı olacaktır.
     """)
 
